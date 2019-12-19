@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+h1 {
+    font-family: "Anton", sans-serif;
+    margin-top: 10px;
+}
+
+main.container {
+    margin: 0;
+    max-width: 100%;
+}
+
+header {
+    position: relative;
+    height: 50vh;
+    background-image: linear-gradient(to right, rgba(255, 182, 193, 0.5),rgb(255, 51, 82), rgb(230, 0, 34));
+    overflow: hidden;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+header > * {
+    position: absolute;
+}
+  
+header div.name {
+    color: #fff;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.row {
+    justify-content: center;
+}
+  
+header h1 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.about h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.jumbotron {
+    background: rgba(255, 182, 193, 0.5);
+}
+
+.education {
+    text-align: center;
+}
+
+.education h1 {
+    text-transform: uppercase;
+    font-size: 36px;
+}
+
+.school-list {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+.school {
+    display: inline-block;
+    /* width: 30%; */
+}
+
+@media (max-width: 533px){
+    .col-sm {
+        display: block;
+    }
+}
+
+
+.image {
+    background: rgb(255, 51, 82);
+    width: 128px;
+    height:128px;
+    border: 2px solid #424242;
+    border-radius: 50%;
+    margin: 2px auto;
+}
+
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+    font-family: "Anton", sans-serif;
+}
+  
+.hobby .item {
+    height: 25vh;
+  
+}
+  
+.hobby .item {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.hobby .item:nth-of-type(1) {
+    background-image: url(images/1.jpg);
+}
+  
+.hobby .item:nth-of-type(2) {
+    background-image: url(images/2.jpg);
+}
+  
+.hobby .item:nth-of-type(3) {
+    background-image: url(images/3.jpg);
+}
+  
+.hobby .item:nth-of-type(4) {
+    background-image: url(images/4.jpg);
+}
+  
+.hobby h1 {
+    padding: 20px;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hobby .item p {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 4px black;
+    background-color: rgba(0, 0, 0, .5);
+    font-size: 20px;
+    padding: 5px 0;
+}
+ 
+@media (min-width:533px) {
+    .hobby .item {
+      width: 50%;
+      height: 40vh;
+      float: left;
+    }
+
+    .footer {
+        width:50%;
+    }
+}
+  
+@media (min-width:768px) {
+    .about h1,
+    .education h1,
+    .hobby h1 {
+      font-size: 48px;
+      margin-top: 40px;
+      margin-bottom: 35px;
+  
+    }
+  
+    .hobby .item p {
+      font-size: 30px;
+      padding: 15px 0;
+    }
+}
+  
+@media (min-width: 1024px) {
+    .hobby .item p {
+      padding: 0;
+      line-height: 40vh;
+      opacity: 0;
+      transition: 1s;
+      cursor: default;
+    }
+  
+    .hobby .item:hover p {
+      opacity: 1;
+    }
+  
+    .hobby .item {
+      background-size: 100%;
+      transition: 1s;
+    }
+  
+    .hobby .item:hover {
+      background-size: 130%;
+    }
+  
+}
+  
+@media (min-width: 1600px) {
+    .about h1,
+    .education h1,
+    .hobby h1 {
+      font-size: 60px;
+      margin-top: 50px;
+      margin-bottom: 45px;
+  
+    }
+  
+    .hobby .item p {
+      font-size: 40px;
+    }
+}
+
+footer {
+    background-color: rgba(255, 182, 193, 0.5);
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;
+  }
